@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* Reset default margin and padding */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    /* Header h1 animation */
+
+    @keyframes scaleText {
+        0%,
+        100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    header h1:hover {
+        animation: scaleText 1s infinite;
+    }
+
+    .header p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .container0 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        /* Adjust as needed */
+    }
+
+    .section {
+        background-color: #05a184;
+        margin: 20px 5px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-header {
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    /* Adjust the "About Me" section and the profile image */
+
+    #about {
+        display: flex;
+        background-color: #f7f7f7;
+        padding: 40px;
+        margin: 20px 0;
+    }
+
+    .profile-image {
+        height: 20%;
+        width: 30%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .profile-image img {
+        border-radius: 50%;
+        max-width: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-content {
+        flex: 1;
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: #05a184;
+        border-radius: 10px;
+    }
+
+    #about h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    #about p {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: disc;
+        font-size: 18px;
+        color: white;
+        padding-left: 20px;
+    }
+
+    .project {
+        margin: 20px 0;
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        transition: transform 0.3s;
+        padding: 20px;
+    }
+
+    .project img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .project:hover {
+        transform: scale(1.03);
+        background-color: rgb(172, 179, 172);
+    }
+
+    .project h3 {
+        font-size: 24px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    .project p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    #resume a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    #resume a:hover {
+        background-color: #555;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    #contact p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+    /* Hover effect for the footer */
+
+    footer:hover {
+        background-color: #555;
+    }
+
+    .project img {
+        width: 15%;
+        padding: 2%;
+    }
+
+    .projectimage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container11 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5px;
+        /* Adjust as needed */
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Portfolio</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Rohit Khilari</h1>
+        <p>Java | Python | Web Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container0">
+            <div class="profile-image">
+                <img src="D:\Codsoft Internship\Task 1\Rohit Photo.jpg" alt="Your Name">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Motivated and dedicated Computer Science Engineering (CSE) student with a strong academic background and a passion for solving complex problems using technology. Seeking an opportunity to apply my skills and knowledge in a challenging
+                    and dynamic work environment.
+                </p>
+
+                <h2 class="section-header">Skills</h2>
+                <ul>
+
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Firebase</li>
+
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container11">
+            <h2 class="section-header">Projects</h2>
+            <h3>Smart Disease Prediction and Hospital Suggestion App</h3>
+            <div class="project">
+                <div class="projectimage">
+                    <img src=" d:\Codsoft Internship\Task 1\Screenshot_2023-11-07-14-46-27-068_com.example.predictdisease.jpg " alt="Project 1 ">
+                    <img src="D:\Codsoft Internship\Task 1\Screenshot_2023-11-07-14-48-56-337_com.example.predictdisease.jpg" alt="Project 1 ">
+                    <img src="D:\Codsoft Internship\Task 1\Screenshot_2023-11-07-14-48-12-432_com.example.predictdisease.jpg" alt="Project 1 ">
+                    <img src="D:\Codsoft Internship\Task 1\Screenshot_2023-11-07-14-48-18-176_com.example.predictdisease.jpg" alt="Project 1 ">
+                </div>
+            </div>
+
+            <p>There is a lack of easy and accurate disease diagnosis and treatment recommendations for individuals seeking quality healthcare, especially in remote or underserved areas. This leads to delayed treatment and potentially poor health outcomes.
+                Developed a Android App where users can able to predict their there Diseases based on symptoms they have provided. The ML model predicts the disease the based on the symptoms. After prediction the disease the app shows the list of Hospital
+                which are providing the treatment for the disease which is predicted by our app..
+            </p>
+        </div>
+
+        <!-- Add more project entries as needed -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume " class="section ">
+        <div class="container ">
+            <h2 class="section-header ">Resume</h2>
+            <a href="D:\Codsoft Internship\Task 1\Rohit K Resume .pdf " target="_blank ">Download PDF</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact " class="section ">
+        <div class="container ">
+            <h2 class="section-header ">Contact Me</h2>
+            <p>Email: rohitkhilari2203@gmail.com</p>
+            <p>Phone: 8810344454</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Rohit Khilari</p>
+    </footer>
+</body>
+
+</html>
